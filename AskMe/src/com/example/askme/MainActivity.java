@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
     	Log.d("ask", "Entrée dans la méthode ask");
 		EditText champQuestion  = (EditText) findViewById(R.id.question);
 		String strQuestion = champQuestion.getText().toString();
-		Log.d("ask", "Question reçu via la méthode ask : " + strQuestion);
+		Log.d("ask", "Question reçue via la méthode ask : " + strQuestion);
 		if(strQuestion.length() < 1) {
 			
 		}
