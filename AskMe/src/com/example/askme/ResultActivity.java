@@ -1,21 +1,14 @@
 package com.example.askme;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.ActionBarActivity;
 
-public class MainActivity extends Activity {
+public class ResultActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_result);
-		Log.i("commit", "test");
-	}
 
-	
-	public void ask() {
-		
 	}
-
 }
