@@ -5,10 +5,10 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry kind="lib" path="C:/Users/TEMP.IUTPARIS.003/Desktop/AskMe/libs/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TEMP.IUTPARIS.003/Desktop/AskMe/libs/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TEMP.IUTPARIS.003/Desktop/AskMe/libs/httpclient-4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TEMP.IUTPARIS.003/Desktop/AskMe/libs/httpcore-4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TEMP.IUTPARIS.003/Desktop/AskMe/libs/WolframAlpha-1.1.jar"/>
+	<classpathentry kind="lib" path="Z:/git/AskMe/libs/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="Z:/git/AskMe/libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="Z:/git/AskMe/libs/httpclient-4.4.jar"/>
+	<classpathentry kind="lib" path="Z:/git/AskMe/libs/httpcore-4.4.jar"/>
+	<classpathentry kind="lib" path="Z:/git/AskMe/libs/WolframAlpha-1.1.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
