@@ -6,6 +6,7 @@
     <string name="AskMe"> Welcome on AskMe !</string>
     <string name="votre_question">Votre question</string>
     <string name="ask">Ask</string>
-   
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
