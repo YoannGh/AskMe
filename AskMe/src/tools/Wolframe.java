@@ -14,7 +14,8 @@ public class Wolframe {
 
 	// PUT YOUR APPID HERE:
     private static String appid = "XXXXX";
-
+    private static WAQueryResult lastQueryResult;
+    
     public static void request(String req) {
         
         // The WAEngine is a factory for creating WAQuery objects,
@@ -37,43 +38,47 @@ public class Wolframe {
         
         try {
             // Execute query
-        	WAQueryResult queryResult = engine.performQuery(query);
-            
-        	// Catch errors
-            if (queryResult.isError()) {
-                System.out.println("Query error");
-                System.out.println("  error code: " + queryResult.getErrorCode());
-                System.out.println("  error message: " + queryResult.getErrorMessage());
-            } else if (!queryResult.isSuccess()) {
-                System.out.println("Query was not understood; no results available.");
-            }
-            // If everything works
-            else {
-                System.out.println("Successful query. Pods follow:\n");
-                for (WAPod pod : queryResult.getPods()) {
-                    if (!pod.isError()) {
-                    	
-                        System.out.println(pod.getTitle());
-                        System.out.println("------------");
-                        
-                        for (WASubpod subpod : pod.getSubpods()) {
-                            for (Object element : subpod.getContents()) {
-                            	
-                                if (element instanceof WAPlainText) {
-                                    System.out.println(((WAPlainText) element).getText());
-                                    System.out.println("");
-                                }
-                                
-                            }
-                        }
-                        
-                        System.out.println("");
-                    }
-                }
-            }
+        	lastQueryResult = engine.performQuery(query);
         } catch (WAException e) {
             e.printStackTrace();
         }
+    }
+    
+    public static String getQueryResult(){
+    	String ret = new String();
+    	// Catch errors
+        if (lastQueryResult.isError()) {
+            ret += "Query error";
+            ret +="  error code: " + lastQueryResult.getErrorCode();
+            ret +="  error message: " + lastQueryResult.getErrorMessage().toString();
+        } else if (!lastQueryResult.isSuccess()) {
+        	ret += "Query was not understood; no results available.";
+        }
+        // If everything works
+        else {
+        	ret += "Successful query. Pods follow:\n";
+            for (WAPod pod : lastQueryResult.getPods()) {
+                if (!pod.isError()) {
+                	
+                	ret += pod.getTitle();
+                	ret += "------------";
+                    
+                    for (WASubpod subpod : pod.getSubpods()) {
+                        for (Object element : subpod.getContents()) {
+                        	
+                            if (element instanceof WAPlainText) {
+                            	ret += ((WAPlainText) element).getText();
+                            	ret += "";
+                            }
+                            
+                        }
+                    }
+                    
+                    ret += "";
+                }
+            }
+        }
+        return ret;
     }
 	
 }
