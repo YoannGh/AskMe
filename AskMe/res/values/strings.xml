@@ -3,7 +3,6 @@
 
     <string name="app_name">AskMe</string>
     <string name="hello_world">Hello world!</string>
-    <string name="votre_question">Votre question</string>
-    <string name="ask">Ask</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
