@@ -1,5 +1,7 @@
 package tools;
 
+import android.util.Log;
+
 import com.wolfram.alpha.WAEngine;
 import com.wolfram.alpha.WAException;
 import com.wolfram.alpha.WAPlainText;
@@ -14,7 +16,7 @@ import com.wolfram.alpha.WASubpod;
 public class Wolframe {
 
 	// PUT YOUR APPID HERE:
-    private static String appid = "XXXXX";
+    private static String appid = "W82RQ4-VW5975UY64";
     private static WAQueryResult lastQueryResult;
     
     public static void request(String req) {
@@ -39,6 +41,7 @@ public class Wolframe {
         
         try {
             // Execute query
+        	Log.d("Wolframe", "querying : " + req);
         	lastQueryResult = engine.performQuery(query);
         } catch (WAException e) {
             e.printStackTrace();

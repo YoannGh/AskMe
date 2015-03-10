@@ -9,5 +9,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_result">Result</string>
+    <string name="reponse">reponse</string>
 
 </resources>
