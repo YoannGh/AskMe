@@ -1,8 +1,6 @@
 # AskMe
 Vocal Questions/Answers Android application
 
-*.APK is available in the bin folder*
-
 **How does this work ?**
 - The SpeechRecognizer class is used to ask vocal questions
 - Questions are retrieved as String objects
