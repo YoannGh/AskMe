@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources>
 
     <string name="app_name">AskMe</string>
+    <string name="title_section1">Historique</string>
+    <string name="title_section2">Vocal</string>
+    <string name="title_section3">Texte</string>
+    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="AskMe"> Welcome on AskMe !</string>
+    
     <string name="votre_question">Votre question</string>
     <string name="ask">Ask</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_result">Result</string>
-    <string name="reponse">reponse</string>
+    
+    <string name="title_activity_result">Réponse</string>
+    <string name="reponse">response</string>
+    <string name="icon_for_listening_off">icon for listening off</string>
+    <string name="instructionVocale">Appuyez sur l\'icône puis parlez</string>
 
 </resources>
